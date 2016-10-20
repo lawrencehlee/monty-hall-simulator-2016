@@ -9,7 +9,10 @@ setup(name='monty_hall_simulator_2016',
         license='MIT',
         packages=['monty_hall_simulator_2016'],
         zip_safe=False,
+        install_requires=['Click',],
         entry_points={
-            'console_scripts': ['monty-hall-simulator-2016=monty_hall_simulator_2016.command_line:main']
-        },
+            'console_scripts': [
+                'mhs=monty_hall_simulator_2016.main:run_simulation'
+            ]
+        }
         )
